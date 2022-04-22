@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: 'Fredoka One', cursive;
+}
+
+.form{
+    background-color: #ffff;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3em 1.5em;
+
+}
+
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+
+
+}
+.form__input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: 1px solid #003;
+    border-radius: 0.2em;
+}
+.form__input--message{
+	font-family:inherit;
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form__cta{
+    font-family: inherit;
+    background-color: #003;
+    color: #ffff;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .7em 0;
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+@media (max-width: 450px){
+    .form{
+        padding: 3em 1em;
+    }
+}
